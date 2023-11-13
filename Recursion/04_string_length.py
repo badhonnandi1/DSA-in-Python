@@ -1,8 +1,8 @@
 def string_length(mystring,left):
-    if left>=len(mystring):
-        return 0 # base case
+    if mystring == "": # base case
+        return left
     else:
-        return 1+string_length(mystring,left+1) #recursive call
+        return string_length(mystring[1:], left+1) #recursive call
  
 mystring = input("Enter a string: ")
 print(string_length(mystring,0))
