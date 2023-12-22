@@ -26,29 +26,29 @@ print(sorted_array)
 
 #--------------------------------------------------------------------------------------------
 
-# main = [2,-3,-1,1,3]
-# minval = min(main)
-# for i in range(len(main)):
-#     main[i] = main[i]-minval
+main = [2,-3,-1,1,3]
+minval = min(main)
+for i in range(len(main)):
+    main[i] = main[i]-minval
 
-# auxilaryArrlen = max(main) + abs(min(main)) + 1
-# # print(main)
-# auxilaryArray = [0]*auxilaryArrlen
-# for i in main:
-#     auxilaryArray[i] +=1
+auxilaryArrlen = max(main) + abs(min(main)) + 1
+# print(main)
+auxilaryArray = [0]*auxilaryArrlen
+for i in main:
+    auxilaryArray[i] +=1
 
-# # print(auxilaryArrlen)
-# # print(auxilaryArray)
-# def search(elem,arr):
-#     idx = elem - minval
-#     if arr[idx] != 0:
-#         return True
-#     else:
-#         return False
-# # print(search(2,auxilaryArray))
-# sorted = []
-# for i in range(len(auxilaryArray)):
-#     if auxilaryArray[i] != 0:
-#         for j in range(auxilaryArray[i]):
-#             sorted.append(i+minval)
-# print(sorted)
+# print(auxilaryArrlen)
+# print(auxilaryArray)
+def search(elem,arr):
+    idx = elem - minval
+    if arr[idx] != 0:
+        return True
+    else:
+        return False
+# print(search(2,auxilaryArray))
+sorted = []
+for i in range(len(auxilaryArray)):
+    if auxilaryArray[i] != 0:
+        for j in range(auxilaryArray[i]):
+            sorted.append(i+minval)
+print(sorted)
